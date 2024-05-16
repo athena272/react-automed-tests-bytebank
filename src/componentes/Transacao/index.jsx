@@ -1,17 +1,21 @@
-import React from 'react';
-import estilos from './Transacao.module.css';
-import { ReactComponent as Ilustracao } from './ilustracao.svg';
+import styles from './Transacao.module.css';
+import Ilustracao from './ilustracao.svg';
 import Formulario from './Formulario';
+import PropTypes from 'prop-types';
+
+Transacao.propTypes = {
+  realizarTransacao: PropTypes.func
+}
 
 export default function Transacao({ realizarTransacao }) {
   return (
-    <section className={estilos.container}>
-      <div className={estilos.detalhe__superior} />
-      <div className={estilos.wrapper}>
+    <section className={styles.container}>
+      <div className={styles.detalhe__superior} />
+      <div className={styles.wrapper}>
         <Formulario realizarTransacao={realizarTransacao} />
       </div>
-      <Ilustracao height="229" width="359" />
-      <div className={estilos.detalhe__inferior} />
+      <img src={Ilustracao} width={310} height={229} />
+      <div className={styles.detalhe__inferior} />
     </section>
   );
 }

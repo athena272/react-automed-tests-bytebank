@@ -1,5 +1,10 @@
-import React, { useState } from 'react';
-import estilos from './Formulario.module.css';
+import { useState } from 'react';
+import styles from './Formulario.module.css';
+import PropTypes from 'prop-types';
+
+Formulario.propTypes = {
+  realizarTransacao: PropTypes.func
+}
 
 export default function Formulario({ realizarTransacao }) {
   const [valor, setValor] = useState({ transacao: '', valor: '' });
@@ -25,10 +30,10 @@ export default function Formulario({ realizarTransacao }) {
   }
 
   return (
-    <form className={estilos.formulario} onSubmit={handleSubmit}>
-      <h3 className={estilos.legenda__opcoes}>Nova Transação</h3>
+    <form className={styles.formulario} onSubmit={handleSubmit}>
+      <h3 className={styles.legenda__opcoes}>Nova Transação</h3>
       <select
-        className={estilos.grupo__opcoes}
+        className={styles.grupo__opcoes}
         onChange={handleChange}
         name="transacao"
         data-testid="select-opcoes"
@@ -39,19 +44,19 @@ export default function Formulario({ realizarTransacao }) {
         <option value="Depósito">Depósito</option>
         <option value="Transferência">Transferência</option>
       </select>
-      <label htmlFor="valor" className={estilos.legenda}>
+      <label htmlFor="valor" className={styles.legenda}>
         Valor
       </label>
       <input
         onChange={handleChange}
-        className={estilos.campo__valor}
+        className={styles.campo__valor}
         type="number"
         value={valor.valor}
         name="valor"
         id="valor"
         placeholder="Digite um valor"
       />
-      <button className={estilos.botao} type="submit">
+      <button className={styles.botao} type="submit">
         Realizar transação
       </button>
     </form>

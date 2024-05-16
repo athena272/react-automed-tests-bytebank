@@ -1,4 +1,9 @@
-import React from 'react';
+import PropTypes from 'prop-types';
+
+Transacoes.propTypes = {
+  transacao: PropTypes.object,
+  estilos: PropTypes.string,
+}
 
 export default function Transacoes({ transacao, estilos }) {
   return (
