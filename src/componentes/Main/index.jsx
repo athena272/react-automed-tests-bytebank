@@ -1,6 +1,6 @@
-import styles from './Principal.module.css';
+import styles from './Main.module.css';
 import Ilustracao from './ilustracao.svg';
-import Saldo from './Saldo';
+import Balance from './Balance';
 import PropTypes from 'prop-types';
 
 const data = Date.now();
@@ -16,11 +16,11 @@ const diasDaSemana = [
 ];
 
 
-Principal.propTypes = {
+Main.propTypes = {
   saldo: PropTypes.number
 }
 
-export default function Principal({ saldo }) {
+export default function Main({ saldo }) {
   return (
     <section className={styles.container}>
       <div className={styles.detalhe__superior} />
@@ -29,7 +29,7 @@ export default function Principal({ saldo }) {
         }, ${hoje.toLocaleDateString('pt-BR')}`}</p>
       <div className={styles.wrapper}>
         <img src={Ilustracao} className={styles.ilustracao} width={230} height={185} alt='Icone Saldo'/>
-        <Saldo saldo={saldo} />
+        <Balance saldo={saldo} />
       </div>
       <div className={styles.detalhe__inferior} />
     </section>

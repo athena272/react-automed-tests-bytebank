@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-Transacoes.propTypes = {
+Transactions.propTypes = {
   transacao: PropTypes.object,
   estilos: PropTypes.string,
 }
 
-export default function Transacoes({ transacao, estilos }) {
+export default function Transactions({ transacao, estilos }) {
   return (
     <li>
       <p className={estilos.mes}>{transacao.mes}</p>

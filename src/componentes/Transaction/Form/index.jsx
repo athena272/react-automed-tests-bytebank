@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import styles from './Formulario.module.css';
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import styles from "./Form.module.css";
+import PropTypes from "prop-types";
 
-Formulario.propTypes = {
-  realizarTransacao: PropTypes.func
-}
+Form.propTypes = {
+  realizarTransacao: PropTypes.func,
+};
 
-export default function Formulario({ realizarTransacao }) {
-  const [valor, setValor] = useState({ transacao: '', valor: '' });
+export default function Form({ realizarTransacao }) {
+  const [valor, setValor] = useState({ transacao: "", valor: "" });
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -17,16 +17,16 @@ export default function Formulario({ realizarTransacao }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const dataTransacao = new Date().toLocaleDateString('pt-br');
-    const mesTransacao = new Date().toLocaleDateString('pt-br', {
-      month: 'long',
+    const dataTransacao = new Date().toLocaleDateString("pt-br");
+    const mesTransacao = new Date().toLocaleDateString("pt-br", {
+      month: "long",
     });
     realizarTransacao({
       ...valor,
       data: dataTransacao,
       mes: mesTransacao[0].toUpperCase() + mesTransacao.substring(1),
     });
-    setValor({ ...valor, valor: '' });
+    setValor({ ...valor, valor: "" });
   }
 
   return (

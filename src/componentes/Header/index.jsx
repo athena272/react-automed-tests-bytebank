@@ -1,8 +1,8 @@
-import styles from "./Cabecalho.module.css";
+import styles from "./Header.module.css";
 import Logo from "./bytebank.svg";
 import avatarUsuario from "./avatar.svg";
 
-export default function Cabecalho() {
+export default function Header() {
   return (
     <header className={styles.cabecalho}>
       <div className={styles.container}>
