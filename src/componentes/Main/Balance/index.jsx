@@ -1,12 +1,12 @@
-import styles from './Saldo.module.css';
+import styles from './Balance.module.css';
 import Icone from './icone-olho.svg';
 import PropTypes from 'prop-types';
 
-Saldo.propTypes = {
+Balance.propTypes = {
   saldo: PropTypes.number
 }
 
-export default function Saldo({ saldo }) {
+export default function Balance({ saldo }) {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
