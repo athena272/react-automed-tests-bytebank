@@ -1,11 +1,6 @@
-import PropTypes from 'prop-types';
+import React from 'react';
 
-Transactions.propTypes = {
-  transacao: PropTypes.object,
-  estilos: PropTypes.string,
-}
-
-export default function Transactions({ transacao, estilos }) {
+export default function Transacoes({ transacao, estilos }) {
   return (
     <li>
       <p className={estilos.mes}>{transacao.mes}</p>
