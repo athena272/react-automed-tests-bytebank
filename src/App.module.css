@@ -3,7 +3,6 @@ html {
   min-height: 100%;
   flex-direction: column;
 }
-
 body {
   font-family: "Inter", sans-serif;
   display: flex;

@@ -1,0 +1,20 @@
+import React from "react";
+import estilos from "./Cabecalho.module.css";
+import { ReactComponent as Logo } from "./bytebank.svg";
+import avatarUsuario from "./avatar.svg";
+
+export const userNameFromBack = "Joana Fonseca Gomes";
+
+export default function Cabecalho() {
+  return (
+    <header className={estilos.cabecalho}>
+      <div className={estilos.container}>
+        <Logo />
+        <div className={estilos.usuario}>
+          <p>{userNameFromBack}</p>
+          <img src={avatarUsuario} alt="Ícone de um avatar de usuário" />
+        </div>
+      </div>
+    </header>
+  );
+}
