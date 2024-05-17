@@ -1,4 +1,5 @@
-import styles from './Menu.module.css';
+import React from 'react';
+import estilos from './Menu.module.css';
 
 const listaMenu = [
   'Inicial',
@@ -9,15 +10,15 @@ const listaMenu = [
 
 export default function Menu() {
   return (
-    <nav className={styles.menu}>
+    <nav className={estilos.menu}>
       {listaMenu.map((item, indice) => {
         return (
-          <div key={item} className={styles.item}>
-            <a href="/" className={styles.link}>
+          <div key={item} className={estilos.item}>
+            <a href="/" className={estilos.link}>
               {item}
             </a>
             {indice !== listaMenu.length - 1 && (
-              <div className={styles.divisor} />
+              <div className={estilos.divisor} />
             )}
           </div>
         );
