@@ -1,4 +1,4 @@
-import { calculaNovoSaldo } from './index';
+import { calculaNovoSaldo } from './index.js';
 
 describe('Quando eu realizo uma transação', () => {
   it('Que é um depósito, o saldo deve aumentar', () => {

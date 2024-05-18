@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Saldo from './index';
+import Saldo from './index.jsx';
 
 describe('Componente <Saldo />', () => {
   test('Deve renderizar o saldo com valor monetário', () => {

@@ -1,5 +1,5 @@
 const { render, screen } = require('@testing-library/react');
-import Cabecalho from './index';
+import Cabecalho from './index.jsx';
 
 test('Deve renderizar o nome do usuário logado', () => {
   render(<Cabecalho />);
