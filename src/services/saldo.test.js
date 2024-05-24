@@ -34,11 +34,11 @@ describe('src/services/saldo.js', () => {
         expect(api.get).toHaveBeenCalledWith('/saldo');
         expect(api.get).toHaveBeenCalledTimes(1);
     });
-    test('Deve retornar o saldo de 1000', async () => {
+    test('Deve retornar o saldo de -1', async () => {
         api.get.mockImplementation(() => mockRequisicaoErro());
         const saldo = await buscaSaldo();
 
-        expect(saldo).toEqual(1000);
+        expect(saldo).toEqual(-1);
         expect(api.get).toHaveBeenCalledWith('/saldo');
         expect(api.get).toHaveBeenCalledTimes(1);
     });
