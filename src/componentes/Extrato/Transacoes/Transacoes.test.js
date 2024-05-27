@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Transacoes from './index.jsx';
+import Transacoes from './index';
 import estilos from '../Extrato.module.css';
 
 test('Deve renderizar o mesmo componente com props atualizadas', () => {

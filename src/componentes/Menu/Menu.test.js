@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Menu from './index.jsx';
+import Menu from './index';
 
 test('Deve renderizar o link para a página inicial', () => {
   render(<Menu />, { wrapper: BrowserRouter });

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Extrato from './index.jsx';
+import Extrato from './index';
 
 test('Deve renderizar uma lista de transações', () => {
   const transacoes = [
