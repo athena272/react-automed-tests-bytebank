@@ -5,7 +5,7 @@ export async function buscaSaldo() {
     const resp = await api.get('/saldo');
     return resp.data.valor;
   } catch (err) {
-    return -1;
+    return 1000;
   }
 }
 
