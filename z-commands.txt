@@ -1,3 +1,11 @@
+npm install cypress --save-dev
+
 npx cypress open
 
 npx cypress run
+
+npx cypress run –headless 
+
+npx cypress run -- browser edge
+
+npx cypress open --config viewportWidth=375,viewportHeight=667
