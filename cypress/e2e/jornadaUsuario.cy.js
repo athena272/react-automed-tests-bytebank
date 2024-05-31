@@ -19,12 +19,12 @@ describe('Jornadas de usuário', () => {
     cy.location('pathname').should('eq', '/');
   })
 
-  it.only('Deve permitir que a pessoa usuária faça o seu cadastro, realize login na aplicação, realize uma transação e faça um logout', () => {
+  it.only('Deve permitir que a pessoa usuária faça o seu cadastro, realize login na aplicação', () => {
     cy.visit('/');
 
     cy.getByData('botao-cadastro').click();
     cy.getByData('nome-input').type('Gui Lima');
-    cy.getByData('email-input').type('gui@email.com');
+    cy.getByData('email-input').type('gui@emailoutro.com');
     cy.getByData('senha-input').type('456789');
     cy.getByData('botao-enviar').click();
 
@@ -34,7 +34,7 @@ describe('Jornadas de usuário', () => {
     cy.location('pathname').should('eq', '/');
 
     cy.getByData('botao-login').click();
-    cy.getByData('email-input').type('gui@email.com');
+    cy.getByData('email-input').type('gui@emailoutro.com');
     cy.getByData('senha-input').type('456789');
     cy.getByData('botao-enviar').click();
 
