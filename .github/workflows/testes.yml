@@ -25,4 +25,4 @@ jobs:
         run: npm test
 
       - name: Monitor de cobertura de testes
-        run: npm run test:coverage
+        run: npm run test
