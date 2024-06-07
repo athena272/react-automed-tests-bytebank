@@ -41,8 +41,7 @@ describe('Atualização de dados do usuario', () => {
 
         const userId = win.localStorage.getItem('userId');
 
-        cy.request('GET', `http://localhost:8000/users/${userId}`).then(
-          (resposta) => {
+        cy.request('GET', `http://localhost:8000/users/${userId}`).then((resposta) => {
             expect(resposta.status).to.eq(200);
             expect(resposta.body.nome).to.be.equal(novoDadosDeUsuario.nome);
             expect(resposta.body.senha).to.be.equal(novoDadosDeUsuario.senha);
