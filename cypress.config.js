@@ -7,4 +7,9 @@ module.exports = defineConfig({
     },
     baseUrl: 'http://localhost:3000'
   },
+  env: {
+    mobileViewportWidthBreakpoint: 420,
+  },
+  viewportWidth: 1200,
+  viewportHeight: 990,
 });
