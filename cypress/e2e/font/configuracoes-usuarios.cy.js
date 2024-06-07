@@ -35,6 +35,7 @@ describe('Atualização de dados do usuario', () => {
 
       cy.url().should('include', '/home');
 
+      // cy.window é usado para acessar a janela global do navegador.
       cy.window().then((win) => {
         expect(win.localStorage.getItem('nomeUsuario')).to.equal(
           novoDadosDeUsuario.nome
