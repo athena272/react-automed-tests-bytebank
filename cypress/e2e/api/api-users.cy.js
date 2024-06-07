@@ -55,6 +55,21 @@ describe('Realizando requisições para a API', () => {
     });
   });
 
+  context('Realizando login via API', () => {
+    it('Deve permitir o login do usuário Neilton Seguins', () => {
+      cy.request({
+        method: 'POST',
+        url: 'http://localhost:8000/users/login',
+        body: Cypress.env(),
+      }).then((resposta) => {
+        expect(resposta.status).to.eq(200);
+        expect(resposta.body).is.not.empty;
+        expect(resposta.body.user).to.have.property('nome');
+        expect(resposta.body.user.nome).to.be.equal('Neilton Seguins');
+      });
+    })
+  })
+
   context('Teste método PUT da API Usuários', () => {
     it('Atualiza informações do usuário com sucesso', () => {
       const usuario = {
