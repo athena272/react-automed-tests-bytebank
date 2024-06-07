@@ -28,6 +28,7 @@ describe('Atualização de dados do usuario', () => {
       cy.getByData('botao-salvar-alteracoes').should('not.be.disabled');
       cy.getByData('botao-salvar-alteracoes').click();
 
+      // Adicionar um ouvinte a um elemento.
       cy.on('window:alert', (textoDoAlert) => {
         expect(textoDoAlert).to.equal('Alterações salvas com sucesso!');
       });
