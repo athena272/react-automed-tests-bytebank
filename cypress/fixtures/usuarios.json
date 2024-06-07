@@ -1,0 +1,12 @@
+[
+    {
+        "nome": "Vinicius Neves",
+        "email": "vinny@alura.com",
+        "senha": "123456"
+    },
+    {
+        "nome": "Neilton Seguins",
+        "email": "neilton@alura.com",
+        "senha": "123456"
+    }
+]
