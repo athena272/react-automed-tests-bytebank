@@ -1,3 +1,7 @@
+os fluxos mais urgentes são
+cadastro de cv - completar cv - busca por vagas - se candidatar 
+cadastro de empresa - anunciar vaga - comprar plano - usar destaque - ver bcv
+
 npm install cypress --save-dev
 
 npm i eslint-plugin-cypress
