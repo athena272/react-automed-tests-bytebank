@@ -1,0 +1,34 @@
+os fluxos mais urgentes são
+cadastro de cv - completar cv - busca por vagas - se candidatar 
+cadastro de empresa - anunciar vaga - comprar plano - usar destaque - ver bcv
+
+npm install cypress --save-dev
+
+npm i eslint-plugin-cypress
+
+npx cypress open
+
+npx cypress run
+
+npx cypress run –headless 
+
+npx cypress run -- browser edge
+
+npx cypress open --config viewportWidth=375,viewportHeight=667
+
+npm install @faker-js/faker --save -dev
+
+Ao testar uma aplicação, pode ser desafiador decidir por onde começar. É importante pensar na prioridade dos testes e quais são as áreas mais críticas da aplicação. A seguir, algumas dicas para ajudar a decidir o que testar primeiro:
+
+Priorize as áreas críticas: Considere as áreas da aplicação que são mais importantes para o sucesso do negócio ou que têm um impacto maior nos usuários. Por exemplo, se você estiver testando um aplicativo de e-commerce, é importante garantir que os usuários possam fazer compras com facilidade.
+Foque nos fluxos principais: Em vez de tentar testar todos os recursos de uma só vez, concentre-se nos fluxos principais da aplicação. Por exemplo, em um aplicativo de viagens, o fluxo principal pode ser pesquisar por um destino, selecionar um voo e fazer uma reserva.
+Priorize os testes com falhas frequentes: Se houver testes que falham com frequência, considere priorizá-los para resolvê-los rapidamente e evitar desperdício de tempo.
+Comece com os testes mais simples: Às vezes, é melhor começar pelos testes mais simples para ganhar impulso e garantir que a configuração de testes esteja funcionando corretamente.
+
+Ao decidir o que testar primeiro, é importante pensar em termos de prioridades e impacto nos usuários e no negócio. Priorizar testes críticos pode ajudar a evitar problemas graves na produção e garantir uma melhor qualidade de software.
+
+No Cypress, podemos configurar e utilizar testes de ponta a ponta seguindo essas prioridades, organizando nossos testes de forma a testar as áreas críticas e os fluxos principais em primeiro lugar. Podemos utilizar os comandos do Cypress para definir fluxos de teste, priorizar testes com falhas frequentes e garantir que as configurações de testes estejam funcionando corretamente.
+
+Tanto mocks quanto stubs são técnicas de simulação de comportamentos em testes automatizados. A diferença é que, enquanto os mocks são usados para verificar a interação do sistema com um objeto simulado, os stubs são usados para fornecer uma resposta pré-definida a uma determinada chamada de função ou método.
+
+Em outras palavras, os mocks testam o comportamento do sistema e os stubs simulam o comportamento do sistema. Por exemplo, podemos usar um mock para verificar se um determinado método foi chamado durante a execução do teste e um stub para simular uma resposta de um serviço externo que ainda não está disponível para testes.
